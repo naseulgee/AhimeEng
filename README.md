@@ -18,7 +18,7 @@
 <div align="center">
 <img alt="Html5" src ="https://img.shields.io/badge/HTML5-E34F26?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="Css3" src ="https://img.shields.io/badge/CSS3-1572B6?&style=for-the-badge&logo=CSS3&logoColor=white"/> <img alt="Javascript" src ="https://img.shields.io/badge/JavaScript ES6-F7DF1E?&style=for-the-badge&logo=JavaScript&logoColor=black"/> <img alt="jQuery" src ="https://img.shields.io/badge/jQuery 3-0769AD?&style=for-the-badge&logo=jQuery&logoColor=white"/>
 <img alt="Visual Studio Code" src ="https://img.shields.io/badge/Visual Studio Code-007ACC?&style=for-the-badge&logo=Visual Studio Code&logoColor=white"/>
-<img alt="CAFE24" src ="https://img.shields.io/badge/CAFE24-0969da?&style=for-the-badge/>
+<img alt="CAFE24" src ="https://img.shields.io/badge/CAFE24-0969da?&style=for-the-badge">
 </div>
 <br/>
 
@@ -40,7 +40,7 @@
     <tr>
         <th width="25%">ㄱ 페이지</th>
         <th width="25%">ㄴ 페이지</th>
-        <th width="25%">ㄷ</th>
+        <th width="25%">ㄷ 페이지</th>
         <th width="25%">ㄹ 페이지</th>
     </tr>
     <tr>
