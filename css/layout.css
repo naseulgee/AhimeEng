@@ -14,7 +14,8 @@ h3 { font-size: 24px; }
 /* 헤더 */
 header { display: block; width: 100%; padding: 20px 0; position: fixed; top: 0; left: 0; z-index: 99; transition: 0.5s; color: var(--subGray_60); font-size: 16px; }
 header.on { background-color: #ffffffcc; -webkit-box-shadow: 0 0 35px #0003; box-shadow: 0 0 35px #0003; }
-header .headerWrap img { height: 40px; transform: translateX(-10px) scale(1.5); }
+header .headerWrap .logo { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+header .headerWrap .logo img { height: 40px; transform: translateX(-10px) scale(1.5); }
 header .headerWrap,
 header .headerWrap ul { display: -ms-flexbox; display: -webkit-box; display: flex; -ms-flex-align: center; -webkit-box-align: center; align-items: center; }
 header .headerWrap { -ms-flex-pack: justify; -webkit-box-pack: justify; justify-content: space-between; }
@@ -72,7 +73,7 @@ main section .scroll.scrollAction { animation: showUp 1s forwards; }
     header .headerWrap .menu svg rect { transition: 0.5s; }
     header .headerWrap .leftWrap { -ms-flex-direction: column; -webkit-box-orient: vertical; flex-direction: column; -ms-flex-pack: center; -webkit-box-pack: center; justify-content: center; width: 100%; height: 0; overflow: hidden; position: absolute; top: 100%; left: 0; -webkit-box-shadow: 0 15px 35px #0003; box-shadow: 0 15px 35px #0003; background-color: #ffffffcc; transition: 0.5s; }
     header .headerWrap .leftWrap li { width: 100%; margin: 0; padding: 10px 0; }
-    header .headerWrap .leftWrap.on { height: 150px; }
+    header .headerWrap .leftWrap.on { height: 176px; }
     header .headerWrap .rightWrap .log { display: none; }
 
     /* footer */
