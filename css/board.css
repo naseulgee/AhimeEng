@@ -1,3 +1,4 @@
+.listpackage { margin-top: 100px; }
 .searchWrap { margin-top: 30px; padding: 10px; border-bottom: 2px solid var(--subGray_50); background-color: var(--subGray_5); font-size: 12px; }
 .searchWrap select { width: 50%; margin: 0 auto; background-color: #fff; }
 .searchWrap .boardSearch { display: block; width: 100%; overflow: hidden; }
