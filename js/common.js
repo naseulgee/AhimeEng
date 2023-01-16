@@ -17,3 +17,9 @@ function LoadIncludeFile() {
 document.addEventListener("DOMContentLoaded", function(){
 	LoadIncludeFile();
 });
+
+function wish(target){
+    let _src = target.children[0].src;
+    if(_src.includes("after")) target.children[0].src = _src.replace("after", "before");
+    if(_src.includes("before")) target.children[0].src = _src.replace("before", "after");
+}
