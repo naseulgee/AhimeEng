@@ -1,0 +1,81 @@
+.menupackage { margin: 0 0 27px; }
+.menupackage .title { min-height: 30px; margin: 10px 0 20px; }
+.menupackage .title .banner { margin: 0 0 20px; }
+.menupackage .title h2 { color: #4a5164; font-size: 36px; }
+.menupackage .title h2,
+.menupackage .title .likeButton { display: inline-block; vertical-align: middle; }
+.menupackage .title .likeButton button { margin: 0 0 0 10px; padding: 0 0 0 20px; height: 16px; font-family: verdana; color: #9a9a9a; letter-spacing: -1px; background: none; }
+.menupackage .title .likeButton.selected button { color: #353535; }
+.menupackage .menuCategory { border: 1px solid #d7d5d5; font-size: 0; line-height: 0; }
+.menupackage .menuCategory > li { display: inline-block; width: 175px; margin: 15px 0 15px 20px; padding: 0 5px 0 0; font-size: 12px; line-height: 14px; vertical-align: top; }
+.menupackage .menuCategory > li > a { padding: 0 13px 0 0; font-weight: bold; color: #2e2e2e; background: url("//img.echosting.cafe24.com/skin/base_ko_KR/product/ico_menu_category.gif") no-repeat 100% 5px; }
+.menupackage .menuCategory > li > a:hover { color: #008bcc; text-decoration: none; background-position: 100% -95px }
+.menupackage .menuCategory > li.selected > a { color: #008bcc; }
+.menupackage .menuCategory > li .count { font-weight: normal; }
+.menupackage .menuCategory > li > ul { padding: 6px 0 0 0; }
+.menupackage .menuCategory > li > ul > li { margin: 8px 0 0 0; line-height: 14px; }
+.menupackage .menuCategory > li > ul > li > a { color: #575a63; }
+.menupackage .menuCategory > li > ul > li > a:hover,
+.menupackage .menuCategory > li > ul > li.selected > a { color: #008bcc; }
+.menupackage .menuCategory > li > ul > li > .button { display: inline-block; position: relative; width: 9px; height: 14px; margin: 1px 0 0 3px; vertical-align: top; }
+.menupackage .subCategory { display: none; position: absolute; left: 50%; top: 13px; z-index: 11; width: 300px; margin: 0 0 0 -151px; padding: 6px 0; border: 1px solid #565960; font-size: 0; line-height: 0; background: #fff url("//img.echosting.cafe24.com/skin/base_ko_KR/product/bg_sub_category_line.gif") repeat-y 150px 0; }
+.menupackage .subCategory li { display: inline-block; width: 130px; margin: 8px 0 8px 18px; font-size: 12px; line-height: 14px; vertical-align: top; }
+.menupackage .subCategory li a { color: #575a63; }
+.menupackage .subCategory li a:hover,
+.menupackage .subCategory li.selected a { color: #008bcc; }
+.menupackage .menuCategory .button.selected { z-index: 11; }
+.menupackage .menuCategory .button.selected .subCategory { display: block; }
+
+.ec-base-product .description { margin: 20px 0 0!important; position: relative; }
+.ec-base-product li { padding: 10px 0; }
+.ec-base-product li:nth-child { margin-top: 20px; }
+.button { width: 38px; height: 38px; padding: 7px 10px; position: absolute; bottom: 0; right: 0; border: 1px solid #c9c9c9; border-radius: 200px; box-sizing: border-box; }
+.button svg { display: block; width: 20px; height: 20px; fill: none; stroke: #c9c9c9; stroke-linecap: round; stroke-linejoin: round; stroke-width: 7px; }
+.ec-admin-icon.cart { padding: 8px; height: 20px!important; filter: invert(79%) sepia(0%) saturate(1423%) hue-rotate(205deg) brightness(106%) contrast(86%); }
+.ec-base-product .thumbnail { margin: 0 0 14px!important; }
+
+.ec-base-product { padding: 0; background-color: #fff; }
+.ec-base-product img { max-width: 100%; }
+.ec-base-product [class*="grid"] { display: table; table-layout: fixed; width: 100%; box-sizing: border-box; padding: 0 7px; font-size: 0; line-height: 0; }
+.ec-base-product [class*="grid"] > li { display: inline-block; margin: 1%!important; vertical-align: top; text-align: center; font-size: 12px; line-height: 1.4; }
+.ec-base-product .thumbnail { position: relative; margin: 0 7px 14px; }
+.ec-base-product .thumbnail a { display: block; }
+.ec-base-product .thumbnail a img { display: block; width: 100%; border: 1px solid #ededed; vertical-align: top; }
+.ec-base-product .thumbnail .wish { position: absolute; right: 3px; bottom: 3px; z-index: 10; }
+.ec-base-product .description { min-height: 10px; margin: 0 7px; line-height: 1em; text-align: left; }
+.ec-base-product .description .name { font-size: 16px; color: #555; line-height: 1.3em; word-wrap: break-word; margin: 0 0 7px; }
+
+.ec-base-product .description .price { margin: 0 0 7px; font-size:20px; color:#416db3; font-weight:bold; }
+.ec-base-product .description .strike { text-decoration: line-through; }
+
+.ec-base-product .more_view { margin: 7px 4px 0; }
+.ec-base-product .more_view a { display: block; padding: 0 0 0 0; background: #d4d4d6; }
+.ec-base-product .more_view a span { overflow: hidden; display: block; width: 100%; height: 30px; text-indent: 120%; background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/product/bg_togglebar_show.png") no-repeat 50% 50%; background-size: 12px 12px; }
+
+@media (min-width: 768px) { .ec-base-product .prdList.grid2 > li { width:23%!important; } }
+@media (max-width: 480px) { .ec-base-product .prdList.grid2 > li { width:48%!important; } }
+
+.normalmenu { margin: 0; }
+.normalmenu .title { margin: 0 0 17px; }
+.normalmenu .title h3 { font-weight: normal; font-size: 20px; color: #2e2e2e; text-align: center; }
+.normalmenu .function { overflow: hidden; margin: 20px 0 20px; text-align: right; line-height: 38px; }
+.normalmenu .function .btnCompare { display: inline-block; padding: 0 12px; border-left: 1px solid #d7d5d5; }
+.normalmenu .function .btnCompare:hover { color: #008bcc; text-decoration: none; }
+.normalmenu .prdCount { float: left; padding: 0 0 0 8px; color: #c9c9c9; font-size: 16px; }
+.normalmenu ul#type { display: inline; margin: 0 4px 0 0; }
+.normalmenu ul#type li { display: inline; padding: 0 6px 0 10px; background: url("//img.echosting.cafe24.com/skin/base_ko_KR/product/bg_result_type.gif") no-repeat 0 50%; }
+.normalmenu ul#type li:first-child { background: none; }
+.normalmenu ul#type li a { color: #2e2e2e }
+.normalmenu ul#type li a:hover { color: #008bcc; text-decoration: none; }
+.normalmenu fieldset { margin: -1px 0 0; padding: 7px 12px; border: 1px solid #d7d5d6; text-align: right; background: #fbf9fa; }
+.normalmenu fieldset select { height: 24px; }
+
+#selArray { border: 1px solid #d5d5d5; font-size: 14px; height: 24px; line-height: 24px; padding: 0 30px 0 12px!important; color: #757575; }
+
+.paging { margin: 30px 0 50px; text-align: center; }
+.paging a { display: inline-block; width: 30px; height: 30px; padding: 8px; box-sizing: border-box; vertical-align: middle; }
+.paging a img { display: block; width: 100%; }
+.paging ol,
+.paging ol li { display: inline-block; }
+.paging ol a { padding: 0; }
+.paging ol a.this { color: var(--mainColor); }

@@ -1,0 +1,119 @@
+/* 인트로 */
+.whyCant { margin: 150px auto;}
+.whyCant .decWrap,
+.whyCant .imgWrap { width: 100%; }
+.whyCant .decWrap .title { font-weight: 600; }
+.whyCant .decWrap .here { margin: 50px 0 20px; }
+
+/* 4가지 매력 */
+.charmingWrap { font-size: 30px; }
+.charmingWrap h1.title { width: 100vw; position: relative; }
+.charmingWrap h2.title { font-size: 70px; }
+.charmingWrap h2.title .emoji img { width: 80px; }
+.charmingWrap h1.title .arrow { display: block; padding: 25px 0; font-size: 20px; }
+.charmingWrap h1.title .arrow::before,
+.charmingWrap h1.title .arrow::after { display: block; content: ""; width: 50vw; height: 50px; border-top: 25px solid transparent; border-bottom: 25px solid var(--mainColor_5); box-sizing: border-box; position: absolute; bottom: 0; background-color: #fff; z-index: -1; }
+.charmingWrap h1.title .arrow::before { left: 0; border-left: 25vw solid var(--mainColor_5); border-right: 25vw solid transparent; }
+.charmingWrap h1.title .arrow::after { right: 0; border-left: 25vw solid transparent; border-right: 25vw solid var(--mainColor_5); }
+.charmingWrap .boxing { margin: 100px auto; padding: 100px 50px; border-radius: 100px; box-sizing: border-box; position: relative; -webkit-box-shadow: 3px 3px 15px #330f5570; box-shadow: 3px 3px 15px #330f5570; background-color: #fff; }
+.charmingWrap .boxing div.emoji { position: absolute; }
+.charmingWrap .boxing div.emoji:nth-of-type(1) { top: -50px; left: 100px; }
+.charmingWrap .boxing div.emoji:nth-of-type(2) { bottom: -50px; right: 50px; }
+.charmingWrap img { max-width: fit-content; }
+/* 가성비 */
+.charmingWrap .cheepClass { overflow: hidden; background-color: var(--mainColor_5); }
+.charmingWrap .cheepClass .title .dot { display: inline-block; position: relative; }
+.charmingWrap .cheepClass .title .dot::before { display: block; content: ""; width: 10px; height: 10px; border-radius: 10px; position: absolute; top: 0; left: 50%; background-color: var(--mainColor_20); }
+.charmingWrap .cheepClass .cheepList { display: -ms-flexbox; display: -webkit-box; display: flex; -ms-flex-wrap: wrap; -webkit-box-lines: multiple; flex-wrap: wrap; -ms-flex-pack: center; -webkit-box-pack: center; justify-content: center; }
+.charmingWrap .cheepClass .cheepList li { width: 30%; min-width: 210px; margin: 50px 5% 0 0; }
+.charmingWrap .cheepClass .cheepList li img { width: 100%; margin-bottom: 25px; border-radius: 100%; }
+/* 24시간 */
+.charmingWrap .oneday { padding: 100px 0; background: url(../images/space.jpg) center no-repeat; background-size: cover; color: #fff; }
+.charmingWrap .oneday ul li { padding-left: 60px; background: url(../images/emoji/07.png) left center no-repeat; background-size: contain; }
+/* 무제한 */
+.charmingWrap .unlimited::after { display: block; content: ""; width: 100%; height: 70px; background-color: #4d2271; }
+.charmingWrap .unlimited .chageOrder .decWrap ul { margin-top: 50px; }
+.charmingWrap .unlimited .chageOrder .decWrap ul li { margin-left: 25px; list-style: disc; }
+.charmingWrap .unlimited .chageOrder .decWrap ul li::marker { color: var(--mainColor_20); }
+.charmingWrap .unlimited .chageOrder .imgWrap { padding-right: 5%; position: relative; top: 70px; }
+.charmingWrap .unlimited .chageOrder .imgWrap p { width: max-content; position: absolute; letter-spacing: -1px; }
+/* 후속관리 */
+.charmingWrap .aftercare { overflow: hidden; background-color: var(--mainColor_80); }
+.charmingWrap .aftercare .boxing { position: relative; }
+.charmingWrap .aftercare .boxing ul { margin-top: 50px; position: relative; z-index: 1; text-shadow: 0 0 20px #fff; }
+.charmingWrap .aftercare .boxing ul li { padding: 10px 50px; background: url(../images/check.png) 0 0 no-repeat; }
+.charmingWrap .aftercare .boxing .imgWrap { position: absolute; bottom: -100px; right: 50px; color: var(--mainColor); }
+.charmingWrap .aftercare .boxing .imgWrap small { position: absolute; bottom: 25px; left: -100px; }
+.charmingWrap .aftercare .boxing div.emoji:nth-of-type(2) { bottom: -25px; left: 40%; right: auto; }
+
+/* 정복 */
+.goWrap { margin: 100px auto; display: -ms-flexbox; display: -webkit-box; display: flex; -ms-flex-wrap: wrap; -webkit-box-lines: multiple; flex-wrap: wrap; -ms-flex-pack: center; -webkit-box-pack: center; justify-content: center; -ms-flex-align: center; -webkit-box-align: center; align-items: center; }
+.goWrap .imgWrap { margin-right: calc(max(0px, 100% - 1063px)); }
+.goWrap .decWrap { margin: 50px 0; }
+.goWrap .goClass { display: block; width: 420px; margin-top: 50px; padding: 20px; border-radius: 50px; box-sizing: border-box; font-size: 24px; }
+.goWrap .goClass:hover { background-color: var(--mainColor_80); color: #fff; }
+
+@media (min-width: 768px) {
+    /* 인트로 */
+    .whyCant { display: -ms-flexbox; display: -webkit-box; display: flex; -ms-flex-align: center; -webkit-box-align: center; align-items: center; }
+
+    /* 4가지 매력 */
+    /* 가성비 */
+    .charmingWrap .cheepClass .cheepList li:last-child { margin-right: 0; }
+    /* 24시간 */
+    .charmingWrap .oneday .title .sunMoon { position: absolute; top: -55px; right: -100px; }
+    .charmingWrap .oneday ul { margin-right: 100px; padding-top: 70px; background: url(../images/clock.png) left top no-repeat; background-size: 340px; }
+    /* 무제한 */
+    .charmingWrap .unlimited .chageOrder .title .emoji:first-of-type { display: none; }
+    .charmingWrap .unlimited .chageOrder .imgWrap p { right: 0; bottom: 15px; transform: translateX(100%); color: #fff; font-size: 25px; font-weight: 100; }
+    /* 후속관리 */
+    .charmingWrap .aftercare .boxing { margin-top: 250px; padding-left: 100px; }
+}
+@media (max-width: 1200px) and (min-width: 768px){
+    /* 인트로 */
+    .whyCant .decWrap { min-width: 495px; margin-right: 20px; }
+
+    /* 4가지 매력 */
+    .charmingWrap h2.title { font-size: 43px; }
+    .charmingWrap h2.title .emoji img { width: 60px; }
+    /* 24시간 */
+    .charmingWrap .oneday ul { min-width: 350px; }
+}
+@media (max-width: 768px){
+    /* 인트로 */
+    .whyCant .decWrap .help { margin-bottom: 50px; }
+
+    /* 4가지 매력 */
+    .charmingWrap { font-size: 20px; }
+    .charmingWrap h2.title { font-size: 33px; }
+    .charmingWrap h2.title .emoji img { width: 30px; }
+    .charmingWrap .boxing { margin: 70px auto; padding: 50px 20px; border-radius: 50px; }
+    .charmingWrap .boxing div.emoji:nth-of-type(1) { top: -35px; left: 20px; }
+    .charmingWrap .boxing div.emoji:nth-of-type(2) { bottom: -35px; right: 20px; }
+    .charmingWrap .boxing div.emoji img { width: 70px; }
+    /* 가성비 */
+    .charmingWrap .cheepClass .title .dot::before { width: 5px; height: 5px; }
+    .charmingWrap .cheepClass .cheepList li { width: 40%; min-width: 150px; margin: 20px 5%; }
+    /* 24시간 */
+    .charmingWrap .oneday { background-image: url(../images/space_m.jpg); }
+    .charmingWrap .oneday .chageOrder { width: 250px; }
+    .charmingWrap .oneday .chageOrder .title .sunMoon { width: 50px; margin: 0 auto 20px; }
+    .charmingWrap .oneday ul { margin-top: 50px; }
+    .charmingWrap .oneday ul li { padding-left: 40px; }
+    /* 무제한 */
+    .charmingWrap .unlimited .chageOrder .decWrap .title { margin: 70px auto 50px; text-align: center; }
+    .charmingWrap .unlimited .chageOrder .decWrap ul { width: 310px; margin: 0 auto; }
+    .charmingWrap .unlimited .chageOrder .imgWrap { width: 60%; }
+    .charmingWrap .unlimited .chageOrder .imgWrap p { width: 160px; top: 27%; left: 85%; color: var(--mainColor); }
+    .charmingWrap .unlimited .chageOrder .imgWrap p strong { display: block; }
+    /* 후속관리 */
+    .charmingWrap .aftercare .boxing ul { margin-top: 25px; }
+    .charmingWrap .aftercare .boxing ul li { padding: 10px 0 0 30px; background-size: 30px; }
+    .charmingWrap .aftercare .boxing .imgWrap { width: 60%; right: -12%; }
+    .charmingWrap .aftercare .boxing .imgWrap small { bottom: 40px; left: -25px; font-size: 12px; }
+
+    /* 정복 */
+    .goWrap .decWrap { text-align: center; }
+    .goWrap .decWrap .title { font-size: 22px; }
+    .goWrap .goClass { width: 100%; padding: 10px; }
+}

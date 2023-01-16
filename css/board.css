@@ -1,0 +1,40 @@
+.searchWrap { margin-top: 30px; padding: 10px; border-bottom: 2px solid var(--subGray_50); background-color: var(--subGray_5); font-size: 12px; }
+.searchWrap select { width: 50%; margin: 0 auto; background-color: #fff; }
+.searchWrap .boardSearch { display: block; width: 100%; overflow: hidden; }
+.searchWrap .boardSearch .search { margin-top: 5px; }
+.searchWrap .boardSearch .search .btnEmFix { width: 67px; height: 36px; padding: 0 10px; border: 1px solid #000; box-sizing: border-box; background: #fff; font-size: 16px; line-height: 36px; }
+.searchWrap .boardSearch .search #search { -webkit-flex: 1; -ms-flex: 1; flex: 1; width: calc(100% - 75px); height: 36px; margin-right: 4px; }
+.searchWrap .boardSearch img { vertical-align: middle; }
+
+.btnWrite { width: 100%; }
+
+.board h3 { display: block; padding: 10px 0; border-bottom: 1px solid var(--subGray_10); color: var(--subGray_70); }
+.board .boardListWrap .boardList { padding: 15px; border-bottom: 1px dashed var(--subGray_20); box-sizing: border-box; }
+.board .boardListWrap .boardList > * { width: 100%; padding: 12px 30px 12px 0; box-sizing: border-box; position: relative; top: 0; left: 0; color: inherit; font-size: inherit; text-align: left; }
+.board .boardListWrap .boardList > *::after { display: block; content: ""; width: 25px; height: 25px; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: url(../images/icon/ico_option_down.png) no-repeat center; background-size: 100%; opacity: 0.5; }
+.board .boardListWrap .boardList.on > *::after { background: url(../images/icon/ico_option_up.png) no-repeat center right; background-size: 100%; }
+.board .boardListWrap .boardList .thumbnail img { display: block; width: 90px; margin-right: 15px; }
+.board .boardListWrap .boardList .description { flex: 1; }
+.board .boardListWrap .boardList .description > span { display: block; }
+.board .boardListWrap .contentView { display: none; padding: 20px 30px; background-color: var(--subGray_5); border-bottom: 1px solid var(--subGray_30); color: var(--subGray_60); }
+.board .boardListWrap .boardList.on + .contentView { display: block; }
+.board .boardListWrap .contentView .attach img { max-width: 80px; max-height: 80px; margin-right: 5px; cursor: pointer; }
+.board .boardListWrap .contentView .boardComment li { margin-top: 20px; }
+.board .boardListWrap .contentView .boardComment li:first-child { margin-top: 0; }
+.board .boardListWrap .contentView .boardComment li .commentInfo span { margin-left: 5px; }
+.board .boardListWrap .contentView form { margin-top: 20px; padding: 15px; background-color: var(--subGray_10); }
+.board .boardListWrap .contentView form > div { margin: 10px 0; }
+.board .boardListWrap .contentView form input { height: 27px; }
+.board .boardListWrap .contentView form textarea { width: 100%; height: 65px; }
+.board .boardListWrap .contentView form .info { display: flex; }
+.board .boardListWrap .contentView form .info .password { margin-left: 5px; }
+
+.board.boardListEmpty { margin: 100px 0; }
+
+.paging { margin: 30px 0 50px; text-align: center; }
+.paging a { display: inline-block; width: 30px; height: 30px; padding: 8px; box-sizing: border-box; vertical-align: middle; }
+.paging a img { display: block; width: 100%; }
+.paging ol,
+.paging ol li { display: inline-block; }
+.paging ol a { padding: 0; }
+.paging ol a.this { color: var(--mainColor); }

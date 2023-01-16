@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--인코딩 설정-->
+    <meta name="content-language" content="kr"><!--기록된 언어-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie를 최신 코드로 적용-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!--화면 배율-->
+    <title>아힘영어</title>
+    <!-- 캐쉬 파기 시간: 캐쉬가 쌓이지 않고 매번 새로운 페이지 로딩 세팅 -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/board.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script> window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><p class="ieWarn" style="position: fixed; bottom: 20px; left: 20px;">Chrome브라우저에 최적화 되어있습니다.</p>'); </script>
+    <script src="./js/scroll_header.js"></script>
+    <script src="./js/scroll_class.js"></script>
+</head>
+
+<body id="sub">
+    <include data-href="./include/header.html"></include>
+
+    <main id="contents" class="layoutCenter">
+        <div class="listpackage">
+            <div>
+                <div class="path">
+                    <span>현재 위치</span>
+                    <ol class="displayFlex contentEnd">
+                        <li><a href="./index.html">홈</a></li>
+                        <li title="현재 위치"><strong>Q&amp;A</strong></li>
+                    </ol>
+                </div>
+                <div class="titleArea">
+                    <h2><font color="333333">Q&amp;A</font></h2>
+                    <p>자주 묻는 질문들을 모아봤어요!</p>
+                </div>
+            </div>
+            <div class="searchWrap">
+                <form id="boardSearchForm" method="get">
+                    <input id="board_no" name="board_no" value="6" type="hidden">
+                    <input id="page" name="page" value="1" type="hidden">
+                    <fieldset class="boardSearch">
+                        <legend>게시물 검색</legend>
+                        <div class="category displayFlex flexWrap">
+                            <select id="search_date" name="search_date">
+                                <option value="week">일주일</option>
+                                <option value="month">한달</option>
+                                <option value="month3">세달</option>
+                                <option value="all">전체</option>
+                            </select>
+                            <select id="search_key" name="search_key">
+                                <option value="subject">제목</option>
+                                <option value="content">내용</option>
+                                <option value="writer_name">글쓴이</option>
+                                <option value="member_id">아이디</option>
+                                <option value="nick_name">별명</option>
+                                <option value="product">상품정보</option>
+                            </select></div>
+                        <div class="search displayFlex">
+                            <input id="search" name="search" class="inputTypeText" type="text">
+                            <a href="#none" class="btnEmFix txtCenter" onclick="BOARD.form_submit('boardSearchForm');">검색</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="board">
+                <ul class="boardListWrap">
+                    <li class="boardList">
+                        <!-- 원래는 a태그. ajax로 통신하여 답변을 불러왔음 -->
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=29&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">스카이프가 뭔가요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=28&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">공휴일 수업은 어떻게 되나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=27&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">가족 또는 형제 할인은 없나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=26&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">체크업 매니징 시스템이 무엇인가요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=25&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">제 수업 영상을 SNS에 공유할 수 있나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=24&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">수업 영상을 녹화 할 수 있나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=23&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">수업 시간에 늦을 경우 어떻게 되나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=22&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">14세 미만, 미성년자도 가입 가능한가요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=21&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">입금계좌번호를 잊어버렸어요.</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=20&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">결제는 어떻게 하나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=19&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">교재 준비는 어떻게 하면 될까요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=18&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">선생님 변경이 가능한가요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=17&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">수업시간 변경을 원할때는 어떻게 하면 되나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=16&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">수업 결석시 보강수업이 있나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                    <li class="boardList">
+                        <button onclick="this.parentElement.classList.toggle('on');" data-href="/board/free/read.html?no=15&amp;board_no=6" class="link displayFlex flexWrap">
+                            <span class="description"><strong class="subject"><span class="text">레벨 테스트가 있나요?</span></strong></span>
+                        </button>
+                    </li>
+                    <li class="contentView">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sapiente eveniet mollitia, hic voluptatibus officia, alias ipsum dicta totam est ratione, rem velit repellendus similique quia libero ipsa fugiat? Officiis?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="paging">
+            <a href="?board_no=6&amp;page=1"><img src="./images/icon/ico_page_back.png" alt="이전 페이지"></a>
+            <ol>
+                <li><a href="?board_no=6&amp;page=1" class="this">1</a></li>
+                <li><a href="?board_no=6&amp;page=2" class="other">2</a></li>
+            </ol>
+            <a href="?board_no=6&amp;page=2"><img src="./images/icon/ico_page_next.png" alt="다음 페이지"></a>
+        </div>
+    </main>
+
+    <include data-href="./include/footer.html"></include>
+</html>
