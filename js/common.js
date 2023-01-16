@@ -14,6 +14,6 @@ function LoadIncludeFile() {
     }
 }
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function(){
 	LoadIncludeFile();
 });
