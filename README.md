@@ -6,14 +6,13 @@
 ## 📖 주제: 쇼핑몰 사이트
 <div align="center">
 
-<img alt="아힘영어 소개 이미지" src="" width="100%"/>
+<img alt="아힘영어 소개 이미지" src="https://user-images.githubusercontent.com/73747247/213876746-19194eda-ed1e-4678-8a46-0f477893ca20.jpg" width="100%"/>
 
 </div>
 
 ### 프로젝트 목적
 + 카페24 플랫폼을 활용하여 화상영어에 대해 홍보 및 결재가 가능한 쇼핑몰 사이트 제작
 + 카페24에서 전달해주는 데이터를 이용한 Ajax에 대한 숙련
-+ 
 <br/>
 
 ## 🛠 사용언어 및 개발 환경
@@ -23,19 +22,6 @@
 <img alt="CAFE24" src ="https://img.shields.io/badge/CAFE24-0969da?&style=for-the-badge">
 </div>
 <br/>
-
-## 🗃 프로젝트 구조
-### 유스케이스 다이어그램
-<table>
-    <tr>
-        <th width="50%">비회원</th>
-        <th width="50%">회원</th>
-    </tr>
-    <tr>
-        <td><img alt="유스케이스 비회원 이미지" src=""/></td>
-        <td><img alt="유스케이스 회원 이미지" src=""/></td>
-    </tr>
-</table>
 
 ## 🖥 미리보기
 <table>
