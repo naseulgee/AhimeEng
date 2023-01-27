@@ -26,15 +26,21 @@
 ## 🖥 미리보기
 <table>
     <tr>
-        <th width="25%">ㄱ 페이지</th>
-        <th width="25%">ㄴ 페이지</th>
-        <th width="25%">ㄷ 페이지</th>
-        <th width="25%">ㄹ 페이지</th>
+        <th colspan="2" width="50%">메인 페이지</th>
+        <th width="50%">모바일 페이지</th>
     </tr>
     <tr>
-        <td><img alt="ㄱ 이미지" src=""/></td>
-        <td><img alt="ㄴ 이미지" src=""/></td>
-        <td><img alt="ㄷ 이미지" src=""/></td>
-        <td><img alt="ㄹ 이미지" src=""/></td>
+        <td colspan="2"><img alt="메인 이미지" src="https://user-images.githubusercontent.com/73747247/215000087-747cff2b-a224-4c3b-85fb-ede4a9824d29.gif"/></td>
+        <td><img alt="모바일 이미지" src="https://user-images.githubusercontent.com/73747247/215000091-fbcdc81a-8df3-4102-8e7c-9c88349d111a.gif"/></td>
+    </tr>
+    <tr>
+        <th width="33.33%">학습소개 페이지</th>
+        <th width="33.33%">상품목록 페이지</th>
+        <th width="33.33%">QNA 페이지</th>
+    </tr>
+    <tr>
+        <td><img alt="학습소개 이미지" src="https://user-images.githubusercontent.com/73747247/215000096-d689966c-4613-4a29-9367-c8a8dba62cb3.gif"/></td>
+        <td><img alt="상품목록 이미지" src="https://user-images.githubusercontent.com/73747247/215000093-e221e4e0-ddde-4dcf-a3bd-702f635a46a9.gif"/></td>
+        <td><img alt="QNA 이미지" src="https://user-images.githubusercontent.com/73747247/215000083-2bb89c0f-b3ae-4705-af5c-c9179b799d67.gif"/></td>
     </tr>
 </table>
